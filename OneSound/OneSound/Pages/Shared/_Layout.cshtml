@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OneSound_2</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Stores.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark navbar_background border-bottom box-shadow">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">OneSound</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link text-red rounded navbarfont" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-red rounded navbarfont" asp-area="" asp-page="/Store/Sonido">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-red rounded navbarfont" asp-area="" asp-page="/Indiex">Conocenos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="">
+        @RenderBody()
+    </main>
+
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4  col-sm-4">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="#">
+                                    <img width="200" src="~/img/LogoBlanco2.png" alt="">
+                                </a>
+                            </div>
+                            <p class="form-text">
+                                Tu mejor opcion al comprar tu equipo de sonido
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4  col-lg-4  col-sm-4">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Services
+                            </h3>
+                            <ul>
+                                <li><a href="#">Design</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Consulting</a></li>
+                                <li><a href="#">Finance</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4  col-sm-4">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Useful Links
+                            </h3>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#"> Contact</a></li>
+                                <li><a href="#"> Free quote</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            &copy; 2020 - OneSound_2 - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
